@@ -1,6 +1,6 @@
 export const ISOLATE_FEATURE = "ISOLATE_FEATURE";
 export const SHOW_FEATURE = "SHOW_FEATURE";
-export const DELETE_COMPLETED = "DELETE COMPLETED";
+export const DARKMODE = "DARKMODE";
 export const RETURN_HOME = "RETURN HOME";
 
 export const isolateFeature = (feature) => {
@@ -11,8 +11,8 @@ export const showFeature = (feature) => {
 	return { type: SHOW_FEATURE, payload: feature };
 };
 
-export const hideUnselected = () => {
-    return { type: DELETE_COMPLETED };
+export const darkMode = () => {
+    return { type: DARKMODE };
 }
 
 export const returnHome = () => {

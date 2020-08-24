@@ -6,9 +6,7 @@ import Appbar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/toolbar";
 import Typography from "@material-ui/core/Typography";
 import { HideOnScroll } from "../Animations/HideOnScroll";
-import {useLocalStorage} from "../Hooks/UseLocalStorage.js"
-import useToggle from "../Hooks/Toggle.js";
-import { Reducer, initialState} from "../Reducers/Reducer"
+import {darkMode} from "../Actions/Actions"
 
 const useStyles = makeStyles((theme) => ({
 	text: {
@@ -30,7 +28,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function Header(props) {
-	 const darkMode1 = useSelector(state => state.display);
+	 const darkMode1 = useSelector(state => state.dark);
   const dispatch = useDispatch();
 	HideOnScroll(props)
 	const classes = useStyles();
@@ -43,9 +41,7 @@ export default function Header(props) {
 							Quiet Cast
 						</Typography>
 						<Typography
-							onClick={() => {
-								dispatch({ type: "TOGGLE_CLASS_DARK" });
-							}}
+							onClick={() => dispatch(darkMode())}
 							variant="h3"
 							color="primary"
 							className={darkMode1 ? classes.Light : classes.hideEl}
@@ -53,7 +49,7 @@ export default function Header(props) {
 							Light
 						</Typography>
 						<Typography
-							onClick={() => dispatch({ type: "TOGGLE_CLASS_DARK" })}
+							onClick={() => dispatch(darkMode())}
 							variant="h3"
 							color="primary"
 							className={!darkMode1 ? classes.Dark : classes.hideEl}

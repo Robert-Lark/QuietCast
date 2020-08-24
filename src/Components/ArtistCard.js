@@ -41,7 +41,7 @@ textDecoration:"bold",
 
 function ArtistCard(props) {
 	const classes = useStyles();
-	const display = useSelector((state) => state[0]);
+	const display = useSelector((state) => state.interviewInfo[0]);
 		const dispatch = useDispatch();
 
 	return (
