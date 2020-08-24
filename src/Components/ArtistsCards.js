@@ -24,7 +24,7 @@ const useStyles = makeStyles((theme) => ({
 		opacity: "1",
 	},
 	hideEl: {
-		display: "none"
+		display: "none",
 		// transition: "opacity 5s",
 		// opacity: "0",
 		// margin: "25px",
@@ -54,12 +54,12 @@ function ArtistCards(props) {
 		<ThemeProvider theme={theme}>
 			<Grid container className={classes.container}>
 				{state.map((img) => (
-					<Grid Item className={img.display ? classes.showEl : classes.hideEl}>
+					<Grid item className={img.display ? classes.showEl : classes.hideEl}>
 						{console.log(img.bodyDisplay)}
 						<Paper
 							variant="secondary"
 							elevation="3"
-							className={classes.artistCard}
+							className={img.bodyDisplay ? classes.hideEl : classes.artistCard}
 						>
 							<img
 								src={img.img}
@@ -72,7 +72,7 @@ function ArtistCards(props) {
 							item
 							className={img.bodyDisplay ? classes.showEl : classes.hideEl}
 						>
-							<ArtistCard />
+							<ArtistCard key={"interview"} />
 						</Grid>
 					</Grid>
 				))}

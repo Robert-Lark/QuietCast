@@ -1,6 +1,7 @@
 export const ISOLATE_FEATURE = "ISOLATE_FEATURE";
 export const SHOW_FEATURE = "SHOW_FEATURE";
 export const DELETE_COMPLETED = "DELETE COMPLETED";
+export const RETURN_HOME = "RETURN HOME";
 
 export const isolateFeature = (feature) => {
 console.log(feature)
@@ -12,4 +13,8 @@ export const showFeature = (feature) => {
 
 export const hideUnselected = () => {
     return { type: DELETE_COMPLETED };
+}
+
+export const returnHome = () => {
+    return { type: RETURN_HOME };
 }
