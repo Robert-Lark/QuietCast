@@ -8,6 +8,7 @@ import theme from "../UI/Theme";
 import { makeStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
 import { useSelector } from "react-redux";
+import ArtistCard from "./ArtistCard";
 
 const useStyles = makeStyles((theme) => ({
 	container: {
@@ -23,9 +24,10 @@ const useStyles = makeStyles((theme) => ({
 		opacity: "1",
 	},
 	hideEl: {
-		transition: "opacity 5s",
-		opacity: "0",
-		margin: "25px",
+		display: "none"
+		// transition: "opacity 5s",
+		// opacity: "0",
+		// margin: "25px",
 	},
 	artistCard: {
 		width: "600px",
@@ -47,13 +49,13 @@ function ArtistCards(props) {
 	const dispatch = useDispatch();
 	const state = useSelector((state) => state);
 
-
 	const classes = useStyles();
 	return (
 		<ThemeProvider theme={theme}>
 			<Grid container className={classes.container}>
 				{state.map((img) => (
 					<Grid Item className={img.display ? classes.showEl : classes.hideEl}>
+						{console.log(img.bodyDisplay)}
 						<Paper
 							variant="secondary"
 							elevation="3"
@@ -66,6 +68,12 @@ function ArtistCards(props) {
 								onClick={() => dispatch(isolateFeature(img))}
 							/>
 						</Paper>
+						<Grid
+							item
+							className={img.bodyDisplay ? classes.showEl : classes.hideEl}
+						>
+							<ArtistCard />
+						</Grid>
 					</Grid>
 				))}
 			</Grid>

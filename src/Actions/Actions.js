@@ -3,7 +3,7 @@ export const SHOW_FEATURE = "SHOW_FEATURE";
 export const DELETE_COMPLETED = "DELETE COMPLETED";
 
 export const isolateFeature = (feature) => {
-//console.log(feature)
+console.log(feature)
    return { type: ISOLATE_FEATURE, payload: feature };
 };
 export const showFeature = (feature) => {
