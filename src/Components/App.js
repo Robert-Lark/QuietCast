@@ -1,5 +1,6 @@
-import React, { useState, useReducer } from "react";
+import React from "react";
 import { ThemeProvider } from "@material-ui/core/styles";
+import { useSelector } from "react-redux";
 import {useToggle} from "../Hooks/Toggle.js";
 import theme from "../UI/Theme";
 import Header from "../UI/header";
@@ -7,8 +8,7 @@ import ArtistCards from "./ArtistsCards";
 import Grid from "@material-ui/core/Grid";
 import { makeStyles } from "@material-ui/core/styles";
 import { useLocalStorage } from "../Hooks/UseLocalStorage"
-import { classReducer, initialState } from "..//Reducers";
-//import { darkModeContext } from "../UI/header"
+
 
 
 const useStyles = makeStyles((theme) => ({
@@ -25,13 +25,15 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 function App() {
-const [state, dispatch] = useReducer(classReducer, initialState);
+	 const darkMode0 = useSelector(state => state.dark);
+	  
 	const classes = useStyles();
+
 	return (
 		<ThemeProvider theme={theme}>
 			<Grid
 				container
-				className={state.dark ? classes.containerDark : classes.containerLight}
+				className={darkMode0 ? classes.containerDark : classes.containerLight}
 			>
 				<Header />
 				<ArtistCards />

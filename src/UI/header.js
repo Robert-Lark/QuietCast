@@ -1,4 +1,6 @@
-import React, {useState, useReducer} from "react";
+import React from "react";
+import { useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { makeStyles } from "@material-ui/core/styles";
 import Appbar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/toolbar";
@@ -6,7 +8,7 @@ import Typography from "@material-ui/core/Typography";
 import { HideOnScroll } from "../Animations/HideOnScroll";
 import {useLocalStorage} from "../Hooks/UseLocalStorage.js"
 import useToggle from "../Hooks/Toggle.js";
-import { classReducer, initialState} from "..//Reducers"
+import { Reducer, initialState} from "../Reducers/Reducer"
 
 const useStyles = makeStyles((theme) => ({
 	text: {
@@ -28,8 +30,8 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function Header(props) {
-	const [state, dispatch] = useReducer(classReducer, initialState);
-
+	 const darkMode1 = useSelector(state => state.display);
+  const dispatch = useDispatch();
 	HideOnScroll(props)
 	const classes = useStyles();
 	return (
@@ -41,10 +43,12 @@ export default function Header(props) {
 							Quiet Cast
 						</Typography>
 						<Typography
-							onClick={() => {dispatch({ type: "TOGGLE_CLASS_DARK" })}}
+							onClick={() => {
+								dispatch({ type: "TOGGLE_CLASS_DARK" });
+							}}
 							variant="h3"
 							color="primary"
-							className={state.dark ? classes.Light : classes.hideEl}
+							className={darkMode1 ? classes.Light : classes.hideEl}
 						>
 							Light
 						</Typography>
@@ -52,7 +56,7 @@ export default function Header(props) {
 							onClick={() => dispatch({ type: "TOGGLE_CLASS_DARK" })}
 							variant="h3"
 							color="primary"
-							className={!state.dark ? classes.Dark : classes.hideEl}
+							className={!darkMode1 ? classes.Dark : classes.hideEl}
 						>
 							Dark
 						</Typography>
