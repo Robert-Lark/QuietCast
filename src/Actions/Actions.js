@@ -4,7 +4,7 @@ export const DARKMODE = "DARKMODE";
 export const RETURN_HOME = "RETURN HOME";
 
 export const isolateFeature = (feature) => {
-console.log(feature)
+    window.scrollTo(0, 0);
    return { type: ISOLATE_FEATURE, payload: feature };
 };
 export const showFeature = (feature) => {
@@ -16,5 +16,6 @@ export const darkMode = () => {
 }
 
 export const returnHome = () => {
+    window.scrollTo(0, 0);
     return { type: RETURN_HOME };
 }
