@@ -3,8 +3,6 @@ import { useHistory } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { makeStyles } from "@material-ui/core/styles";
 import "../UI/galleryStyles.css";
-import hiddenRivers from "./hidden_rivers.jpg";
-import BOC from "./boardsOfCanada.jpg";
 import AlbumModal from './AlbumModal'
 
 const useStyles = makeStyles(() => ({
@@ -62,7 +60,7 @@ function ArtistReleasesSlider(props) {
 	const [modalTitle, setModalTitle] = useState(albumArt.artistAlbumTitle1);
 	const [modalText, setModalText] = useState(albumArt.artistAlbumInfo1);
 	const [modalUrl, setModalUrl] = useState(albumArt.artistAlbumUrl1);
-
+	const [modalOpen, setModalOpen] = useState(false)
 	//IMAGES
 	const galleryImages = currentModal[0].modal;
 	console.log(galleryImages);
@@ -75,7 +73,12 @@ function ArtistReleasesSlider(props) {
 		setModalTitle(el.artistAlbumTitle);
 		setModalText(el.artistAlbumInfo);
 		setModalUrl(el.artistAlbumUrl);
+		setModalOpen(true)
 	}
+		const handleClose = () => {
+			setModalOpen(false);
+		};
+
 
 	const classes = useStyles();
 	return (
@@ -98,7 +101,7 @@ function ArtistReleasesSlider(props) {
 					/>
 				))}
 			</div>
-			<AlbumModal image={modalImage} title={modalTitle} text={modalText} url={modalUrl}/>
+			<AlbumModal image={modalImage} title={modalTitle} text={modalText} url={modalUrl} open={modalOpen} close={()=>handleClose()}/>
 			<div className="modal">
 				<div className="modalInner">
 					<button aria-label="Previous Photo" className="prev">
