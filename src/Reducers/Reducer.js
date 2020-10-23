@@ -103,66 +103,70 @@ export const initialState = {
 			sixAm: "Loscil",
 			artistAlbumsCoverArt: [QC001AAA1, QC001AMAA],
 			artistAlbumsMixCoverArt: [QC001AAA1, QC001AMAA],
-			modal1: {
-				artistAlbumTitle1: "Hidden Rivers - Where the moss grows",
-				artistAlbumInfo1: "Created by the founder of Serein",
-				artistAlbumUrl1: "www.quietcalmrecords.com",
-			},
-			modal2: {
-				artistAlbumTitle2: "Boards of Canada - Not Sure",
-				artistAlbumInfo2: "An early album from the masters of downtempo",
-				artistAlbumUrl1: "www.quietcalmrecords.com",
-			},
-			modal3: {
-				artistAlbumTitle3: "www.quietcalmrecords.com/store",
-				artistAlbumInfo3: "test13",
-				artistAlbumUrl1: "www.quietcalmrecords.com",
-			},
-			modal4: {
-				artistAlbumTitle4: "",
-				artistAlbumInfo4: "test14",
-				artistAlbumUrl1: "www.quietcalmrecords.com",
-			},
-			modal5: {
-				artistAlbumInfo5: "test15",
-				artistAlbumInfo6: "test16",
-				artistAlbumUrl1: "www.quietcalmrecords.com",
-			},
-			modal6: {
-				artistAlbumInfo7: "test17",
-				artistAlbumInfo8: "test18",
-				artistAlbumUrl1: "www.quietcalmrecords.com",
-			},
-			modal7: {
-				artistAlbumInfo9: "test19",
-				artistAlbumInfo10: "test11",
-				artistAlbumUrl1: "www.quietcalmrecords.com",
-			},
-			modal8: {
-				artistAlbumMixInfo1: "test1",
-				artistAlbumMixInfo2: "test12",
-				artistAlbumUrl1: "www.quietcalmrecords.com",
-			},
-			modal9: {
-				artistAlbumMixInfo3: "test13",
-				artistAlbumMixInfo4: "test14",
-				artistAlbumUrl1: "www.quietcalmrecords.com",
-			},
-			modal10: {
-				artistAlbumMixInfo5: "test15",
-				artistAlbumMixInfo6: "test16",
-				artistAlbumUrl1: "www.quietcalmrecords.com",
-			},
-			modal11: {
-				artistAlbumMixInfo7: "test17",
-				artistAlbumMixInfo8: "test18",
-				artistAlbumUrl1: "www.quietcalmrecords.com",
-			},
-			modal12: {
-				artistAlbumMixInfo9: "test19",
-				artistAlbumMixInfo10: "test11",
-				artistAlbumUrl1: "www.quietcalmrecords.com",
-			},
+			modal: [
+				{
+					img: QC001AAA1,
+					artistAlbumTitle: "Hidden Rivers - Where the moss grows",
+					artistAlbumInfo: "Created by the founder of Serein",
+					artistAlbumUrl: "www.quietcalmrecords.com",
+				},
+				{
+					img: QC001AMAA,
+					artistAlbumTitle: "Boards of Canada - Not Sure",
+					artistAlbumInfo: "An early album from the masters of downtempo",
+					artistAlbumUrl: "www.quietcalmrecords.com",
+				},
+				{
+					artistAlbumTitle: "www.quietcalmrecords.com/store",
+					artistAlbumInfo: "test13",
+					artistAlbumUrl: "www.quietcalmrecords.com",
+				},
+				{
+					artistAlbumTitle: "",
+					artistAlbumInfo: "test14",
+					artistAlbumUrl: "www.quietcalmrecords.com",
+				},
+				{
+					artistAlbumInfo: "test15",
+					artistAlbumInfo: "test16",
+					artistAlbumUrl: "www.quietcalmrecords.com",
+				},
+				{
+					artistAlbumInfo: "test17",
+					artistAlbumInfo: "test18",
+					artistAlbumUrl: "www.quietcalmrecords.com",
+				},
+				{
+					artistAlbumInfo: "test19",
+					artistAlbumInfo: "test11",
+					artistAlbumUrl: "www.quietcalmrecords.com",
+				},
+				{
+					artistAlbumMixInfo: "test1",
+					artistAlbumMixInfo: "test12",
+					artistAlbumUrl: "www.quietcalmrecords.com",
+				},
+				{
+					artistAlbumMixInfo: "test13",
+					artistAlbumMixInfo: "test14",
+					artistAlbumUrl: "www.quietcalmrecords.com",
+				},
+				{
+					artistAlbumMixInfo: "test15",
+					artistAlbumMixInfo: "test16",
+					artistAlbumUrl: "www.quietcalmrecords.com",
+				},
+				{
+					artistAlbumMixInfo: "test17",
+					artistAlbumMixInfo: "test18",
+					artistAlbumUrl: "www.quietcalmrecords.com",
+				},
+				{
+					artistAlbumMixInfo: "test19",
+					artistAlbumMixInfo: "test11",
+					artistAlbumUrl: "www.quietcalmrecords.com",
+				},
+			],
 		},
 		{
 			img: QC002,

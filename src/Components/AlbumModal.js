@@ -1,10 +1,19 @@
 import React, { useState, useRef } from "react";
 import { useHistory } from "react-router-dom";
 import { useSelector } from "react-redux";
+import Button from "@material-ui/core/Button";
+import TextField from "@material-ui/core/TextField";
+import Dialog from "@material-ui/core/Dialog";
+import DialogActions from "@material-ui/core/DialogActions";
+import DialogContent from "@material-ui/core/DialogContent";
+import DialogContentText from "@material-ui/core/DialogContentText";
+import DialogTitle from "@material-ui/core/DialogTitle";
+import Typography from "@material-ui/core/Typography";
+import FormGroup from "@material-ui/core/FormGroup";
+import Grid from "@material-ui/core/Grid";
 import { makeStyles } from "@material-ui/core/styles";
 import "../UI/galleryStyles.css";
-import hiddenRivers from "./hidden_rivers.jpg";
-import BOC from "./boardsOfCanada.jpg";
+
 
 function AlbumModal(props) {
 	const [open, setOpen] = useState(false);
@@ -15,21 +24,8 @@ function AlbumModal(props) {
 	const handleClose = () => {
 		setOpen(false);
 	};
-	const current = useSelector((state) => state.interviewInfo[0]);
-	console.log(`current model info ${current}`)
 	const history = useHistory();
-	const purchase = () => history.push(current.artistAlbumUrl1);
-	const [modalImage, setModalImage] = useState("");
-	const [modalTitle, setModalTitle] = useState(current.artistAlbumTitle1);
-	const [modalText, setModalText] = useState(current.artistAlbumInfo1);
-	const [modalUrl, setModalUrl] = useState(current.artistAlbumUrl1);
-	function showImage(el) {
-		if (!el) {
-			console.info("no image to show");
-			return;
-		}
-		setModalImage(el.src);
-	}
+	const purchase = () => history.push(props.url);
 	return (
 		<div className="galleries">
 			<div className="modal">
@@ -42,10 +38,10 @@ function AlbumModal(props) {
 						←
 					</button>
 					<figure>
-						<img src={modalImage} />
+						<img src={props.image} />
 						<figcaption>
-							<h2>{modalTitle}</h2>
-							<p>{modalText}</p>
+							<h2>{props.title}</h2>
+							<p>{props.text}</p>
 							<button onClick={purchase}>Order</button>
 						</figcaption>
 					</figure>

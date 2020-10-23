@@ -5,6 +5,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import "../UI/galleryStyles.css";
 import hiddenRivers from "./hidden_rivers.jpg";
 import BOC from "./boardsOfCanada.jpg";
+import AlbumModal from './AlbumModal'
 
 const useStyles = makeStyles(() => ({
 	slider: {
@@ -48,54 +49,47 @@ const useStyles = makeStyles(() => ({
 }));
 
 function ArtistReleasesSlider(props) {
-	const currentInterviewInfo = useSelector((state) => state.interviewInfo);
-	const currentModal = useSelector((modal) => modal.interviewInfo)
-	const history = useHistory();
-	const purchase = () => history.push(currentInterviewInfo.artistAlbumUrl1);
-	const [modalImage, setModalImage] = useState("");
-	const [modalTitle, setModalTitle] = useState(
-		currentInterviewInfo.artistAlbumTitle1
-	);
-	const [modalText, setModalText] = useState(
-		currentInterviewInfo.artistAlbumInfo1
-	);
-	const [modalUrl, setModalUrl] = useState(
-		currentInterviewInfo.artistAlbumUrl1
-	);
-	
-	// if (!gallery) {
-	// 	throw new Error("No Gallery passed in");
-	// }
-	//REF'S
-	const galleryRef = useRef();
-	const modalImg = useRef();
-	const previousButton = useRef();
-	const nextButton = useRef();
-	//IMAGES
-	const galleryImages = [hiddenRivers, BOC];
+	//SELECTORS
+	const albumArt = useSelector((state) => state.interviewInfo);
+	const currentModal = useSelector((modal) => modal.interviewInfo);
 
+	//HISTORY
+	const history = useHistory();
+	const purchase = () => history.push(albumArt.artistAlbumUrl1);
+
+	//STATE
+	const [modalImage, setModalImage] = useState("");
+	const [modalTitle, setModalTitle] = useState(albumArt.artistAlbumTitle1);
+	const [modalText, setModalText] = useState(albumArt.artistAlbumInfo1);
+	const [modalUrl, setModalUrl] = useState(albumArt.artistAlbumUrl1);
+
+	//IMAGES
+	const galleryImages = currentModal[0].modal;
+	console.log(galleryImages);
 	function showImage(el) {
 		if (!el) {
 			console.info("no image to show");
 			return;
 		}
-		console.log(currentModal)
-		setModalImage(el.src);
+		setModalImage(el.img);
+		setModalTitle(el.artistAlbumTitle);
+		setModalText(el.artistAlbumInfo);
+		setModalUrl(el.artistAlbumUrl);
 	}
 
 	const classes = useStyles();
 	return (
 		<div className="galleries">
-			<div className="gallery gallery1" ref={galleryRef}>
+			<div className="gallery gallery1">
 				{galleryImages.map((image) => (
-					<img src={image} alt="Photo 1" tabindex="0" onClick={showImage} />
+					<img src={image.img} alt="Photo 1" tabindex="0" onClick={() => showImage(image)} />
 				))}
 			</div>
 
 			<div className="gallery gallery2">
 				{galleryImages.map((image) => (
 					<img
-						src={image}
+						src={image.img}
 						alt="Photo 1"
 						tabindex="0"
 						title="This is the title of the image"
@@ -104,27 +98,21 @@ function ArtistReleasesSlider(props) {
 					/>
 				))}
 			</div>
-
+			<AlbumModal image={modalImage} title={modalTitle} text={modalText} url={modalUrl}/>
 			<div className="modal">
 				<div className="modalInner">
-					<button
-						aria-label="Previous Photo"
-						className="prev"
-						ref={previousButton}
-					>
+					<button aria-label="Previous Photo" className="prev">
 						←
 					</button>
 					<figure>
-						<img ref={modalImg} src={modalImage} />
+						<img src={modalImage} />
 						<figcaption>
 							<h2>{modalTitle}</h2>
 							<p>{modalText}</p>
-							<button onClick={purchase}>
-								Order
-							</button>
+							<button onClick={purchase}>Order</button>
 						</figcaption>
 					</figure>
-					<button className="next" aria-label="Next Photo" ref={nextButton}>
+					<button className="next" aria-label="Next Photo">
 						→
 					</button>
 				</div>
