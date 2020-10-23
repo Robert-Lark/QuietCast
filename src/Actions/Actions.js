@@ -2,6 +2,7 @@ export const ISOLATE_FEATURE = "ISOLATE_FEATURE";
 export const SHOW_FEATURE = "SHOW_FEATURE";
 export const DARKMODE = "DARKMODE";
 export const RETURN_HOME = "RETURN HOME";
+export const ASSIGN_MODAL = "ASSIGN MODAL";
 
 export const isolateFeature = (feature) => {
     window.scrollTo(0, 0);
@@ -18,4 +19,7 @@ export const darkMode = () => {
 export const returnHome = () => {
     window.scrollTo(0, 0);
     return { type: RETURN_HOME };
+}
+export const assignModal = (modal) => {
+    return { type: ASSIGN_MODAL, payload: modal };
 }

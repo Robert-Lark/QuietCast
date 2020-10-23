@@ -14,6 +14,7 @@ import { InterviewContext } from "../Context/InterviewContext";
 import { InterviewInfoProvider } from "../Context/InterviewContext";
 import { initialState } from "../Reducers/Reducer";
 import { findAllByDisplayValue } from "@testing-library/react";
+import ArtistReleasesSlider from "./artistReleasesSlider";
 
 const useStyles = makeStyles((theme) => ({
 	mainImageContainer: {
@@ -333,6 +334,7 @@ function ArtistCard(props) {
 						</Grid>
 					</Paper>
 				</Grid>
+				<ArtistReleasesSlider/>
 				<Button onClick={() => dispatch(returnHome())}>HOME</Button>
 			</Grid>
 		</InterviewInfoProvider>

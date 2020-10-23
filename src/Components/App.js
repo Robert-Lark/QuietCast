@@ -11,6 +11,7 @@ import Grid from "@material-ui/core/Grid";
 import { makeStyles } from "@material-ui/core/styles";
 import { useLocalStorage } from "../Hooks/UseLocalStorage";
 
+
 const useStyles = makeStyles((theme) => ({
 	containerLight: {
 		height: "100%",
@@ -41,7 +42,7 @@ function App() {
 				<Route exact path="/artist">
 					<ArtistCard key={itemId} id={itemId} displayInfo={state[itemId]} />
 				</Route>
-				
+
 			</Grid>
 		</ThemeProvider>
 	);

@@ -52,7 +52,7 @@ const useStyles = makeStyles((theme) => ({
 
 function ArtistCards(props) {
 	const interview = useContext(InterviewContext)
-	console.log(`INTERVIEWCONTEXT: ${interview}`)
+
 	
 	const dispatch = useDispatch();
 	const state = useSelector((state) => state.interviewInfo);
