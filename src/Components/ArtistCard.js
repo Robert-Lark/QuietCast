@@ -44,12 +44,10 @@ const useStyles = makeStyles((theme) => ({
 	},
 	question: {
 		width: "80vw",
-		border: "4px solid black",
 		textDecoration: "bold",
 	},
 	answer: {
 		width: "80vw",
-		border: "4px solid black",
 		textDecoration: "bold",
 	},
 	soundcloudPlayer: {
@@ -64,6 +62,17 @@ const useStyles = makeStyles((theme) => ({
 			"Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif",
 		fontWeight: "100",
 	},
+	info: {
+		marginTop: "30px",
+		textAlign: "center",
+	},
+	slider: {
+border: "4px solid green",
+		display: "flex",
+		flexDirection: "column",
+		alignItems: "center",
+		justifyContent: "center",
+	},
 }));
 
 function ArtistCard(props) {
@@ -71,7 +80,7 @@ function ArtistCard(props) {
 	const classes = useStyles();
 	const display = useSelector((state) => state.interviewInfo[0]);
 	const dispatch = useDispatch();
-	console.log()
+	console.log();
 	const mainImg = React.createRef();
 	useEffect(() => {
 		//these effect move the image to a certain place
@@ -137,7 +146,7 @@ function ArtistCard(props) {
 				<Grid container className={classes.selectedContainer1}>
 					<Paper>
 						<Grid item>
-							<Typography ClassName={classes.question}>
+							<Typography className={classes.question}>
 								<Box fontWeight="fontWeightBold" m={1}>
 									{display.question1}
 								</Box>
@@ -151,7 +160,7 @@ function ArtistCard(props) {
 							</Typography>
 						</Grid>
 						<Grid item>
-							<Typography ClassName={classes.question}>
+							<Typography className={classes.question}>
 								<Box fontWeight="fontWeightBold" m={1}>
 									{display.question2}
 								</Box>
@@ -165,177 +174,188 @@ function ArtistCard(props) {
 							</Typography>
 						</Grid>
 						<Grid item>
-							<Typography ClassName={classes.question}>
+							<Typography className={classes.question}>
 								<Box fontWeight="fontWeightBold" m={1}>
 									{display.question3}
 								</Box>
 							</Typography>
 						</Grid>
 						<Grid item>
-							<Typography ClassName={classes.answer}>
+							<Typography className={classes.answer}>
 								<Box fontWeight="fontWeightLight" m={1}>
 									{display.answer3}
 								</Box>
 							</Typography>
 						</Grid>
 						<Grid item>
-							<Typography ClassName={classes.question}>
+							<Typography className={classes.question}>
 								<Box fontWeight="fontWeightBold" m={1}>
 									{display.question4}
 								</Box>
 							</Typography>
 						</Grid>
 						<Grid item>
-							<Typography ClassName={classes.answer}>
+							<Typography className={classes.answer}>
 								<Box fontWeight="fontWeightLight" m={1}>
 									{display.answer4}
 								</Box>
 							</Typography>
 						</Grid>
 						<Grid item>
-							<Typography ClassName={classes.question}>
+							<Typography className={classes.question}>
 								<Box fontWeight="fontWeightBold" m={1}>
 									{display.question5}
 								</Box>
 							</Typography>
 						</Grid>
 						<Grid item>
-							<Typography ClassName={classes.answer}>
+							<Typography className={classes.answer}>
 								<Box fontWeight="fontWeightLight" m={1}>
 									{display.answer5}
 								</Box>
 							</Typography>
 						</Grid>
 						<Grid item>
-							<Typography ClassName={classes.question}>
+							<Typography className={classes.question}>
 								<Box fontWeight="fontWeightBold" m={1}>
 									{display.question6}
 								</Box>
 							</Typography>
 						</Grid>
 						<Grid item>
-							<Typography ClassName={classes.answer}>
+							<Typography className={classes.answer}>
 								<Box fontWeight="fontWeightLight" m={1}>
 									{display.answer6}
 								</Box>
 							</Typography>
 						</Grid>
 						<Grid item>
-							<Typography ClassName={classes.question}>
+							<Typography className={classes.question}>
 								<Box fontWeight="fontWeightBold" m={1}>
 									{display.question7}
 								</Box>
 							</Typography>
 						</Grid>
 						<Grid item>
-							<Typography ClassName={classes.answer}>
+							<Typography className={classes.answer}>
 								<Box fontWeight="fontWeightLight" m={1}>
 									{display.answer7}
 								</Box>
 							</Typography>
 						</Grid>
 						<Grid item>
-							<Typography ClassName={classes.question}>
+							<Typography className={classes.question}>
 								<Box fontWeight="fontWeightBold" m={1}>
 									{display.question8}
 								</Box>
 							</Typography>
 						</Grid>
 						<Grid item>
-							<Typography ClassName={classes.answer}>
+							<Typography className={classes.answer}>
 								<Box fontWeight="fontWeightLight" m={1}>
 									{display.answer8}
 								</Box>
 							</Typography>
 						</Grid>
 						<Grid item>
-							<Typography ClassName={classes.question}>
+							<Typography className={classes.question}>
 								<Box fontWeight="fontWeightBold" m={1}>
 									{display.question9}
 								</Box>
 							</Typography>
 						</Grid>
 						<Grid item>
-							<Typography ClassName={classes.answer}>
+							<Typography className={classes.answer}>
 								<Box fontWeight="fontWeightLight" m={1}>
 									{display.answer9}
 								</Box>
 							</Typography>
 						</Grid>
 						<Grid item>
-							<Typography ClassName={classes.question}>
+							<Typography className={classes.question}>
 								<Box fontWeight="fontWeightBold" m={1}>
 									{display.question10}
 								</Box>
 							</Typography>
 						</Grid>
 						<Grid item>
-							<Typography ClassName={classes.answer}>
+							<Typography className={classes.answer}>
 								<Box fontWeight="fontWeightLight" m={1}>
 									{display.answer10}
 								</Box>
 							</Typography>
 						</Grid>
 						<Grid item>
-							<Typography ClassName={classes.question}>
+							<Typography className={classes.question}>
 								<Box fontWeight="fontWeightBold" m={1}>
 									{display.question11}
 								</Box>
 							</Typography>
 						</Grid>
 						<Grid item>
-							<Typography ClassName={classes.answer}>
+							<Typography className={classes.answer}>
 								<Box fontWeight="fontWeightLight" m={1}>
 									{display.answer11}
 								</Box>
 							</Typography>
 						</Grid>
 						<Grid item>
-							<Typography ClassName={classes.question}>
+							<Typography className={classes.question}>
 								<Box fontWeight="fontWeightBold" m={1}>
 									{display.question12}
 								</Box>
 							</Typography>
 						</Grid>
 						<Grid item>
-							<Typography ClassName={classes.answer}>
+							<Typography className={classes.answer}>
 								<Box fontWeight="fontWeightLight" m={1}>
 									{display.answer12}
 								</Box>
 							</Typography>
 						</Grid>
 						<Grid item>
-							<Typography ClassName={classes.question}>
+							<Typography className={classes.question}>
 								<Box fontWeight="fontWeightBold" m={1}>
 									{display.question13}
 								</Box>
 							</Typography>
 						</Grid>
 						<Grid item>
-							<Typography ClassName={classes.answer}>
+							<Typography className={classes.answer}>
 								<Box fontWeight="fontWeightLight" m={1}>
 									{display.answer13}
 								</Box>
 							</Typography>
 						</Grid>
 						<Grid item>
-							<Typography ClassName={classes.question}>
+							<Typography className={classes.question}>
 								<Box fontWeight="fontWeightBold" m={1}>
 									{display.question14}
 								</Box>
 							</Typography>
 						</Grid>
 						<Grid item>
-							<Typography ClassName={classes.answer}>
+							<Typography className={classes.answer}>
 								<Box fontWeight="fontWeightLight" m={1}>
 									{display.answer14}
 								</Box>
 							</Typography>
 						</Grid>
 					</Paper>
+					<Grid item className={classes.info}>
+						<Paper>
+							<Typography>
+								Click the album artwork to learn more about each work. You can
+								also listen and purchase the work(if in stock) via the Quiet
+								Calm Records webstore
+							</Typography>
+						</Paper>
+						<Grid item className={classes.slider}>
+							<ArtistReleasesSlider />
+							<Button onClick={() => dispatch(returnHome())}>HOME</Button>
+						</Grid>
+					</Grid>
 				</Grid>
-				<ArtistReleasesSlider/>
-				<Button onClick={() => dispatch(returnHome())}>HOME</Button>
 			</Grid>
 		</InterviewInfoProvider>
 	);

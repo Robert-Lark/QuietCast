@@ -103,7 +103,7 @@ export const initialState = {
 			sixAm: "Loscil",
 			artistAlbumsCoverArt: [QC001AAA1, QC001AMAA],
 			artistAlbumsMixCoverArt: [QC001AAA1, QC001AMAA],
-			modal: [
+			modalArtist: [
 				{
 					img: QC001AAA1,
 					artistAlbumTitle: "Hidden Rivers - Where the moss grows",
@@ -126,21 +126,8 @@ export const initialState = {
 					artistAlbumInfo: "test14",
 					artistAlbumUrl: "www.quietcalmrecords.com",
 				},
-				{
-					artistAlbumInfo: "test15",
-					artistAlbumInfo: "test16",
-					artistAlbumUrl: "www.quietcalmrecords.com",
-				},
-				{
-					artistAlbumInfo: "test17",
-					artistAlbumInfo: "test18",
-					artistAlbumUrl: "www.quietcalmrecords.com",
-				},
-				{
-					artistAlbumInfo: "test19",
-					artistAlbumInfo: "test11",
-					artistAlbumUrl: "www.quietcalmrecords.com",
-				},
+			],
+			modalMix: [
 				{
 					artistAlbumMixInfo: "test1",
 					artistAlbumMixInfo: "test12",
@@ -233,6 +220,72 @@ export const initialState = {
 				"QCR: Thanks again Alicia for answering some long-held questions and for providing such a fantastic mix. One final question; Aside from the artists, you featured in the mix, what other musicians are you listening to a lot these days, any recommendations?",
 			answer14:
 				"AM: I mostly listen to classical music at the moment, and dark jazz like Bohren and der Club of Gore. And I especially like to listen to people who are making music for the sake of it and not just to get the biggest following they can etc.. I’m always looking out for new sounds to listen to, so send me your recommendations anyone!:) Thank you so much Rob..my pleasure to answer your questions and provide a mix. ",
+			modalArtist: [
+				{
+					img: QC001AAA1,
+					artistAlbumTitle: "Hidden Rivers - Where the moss grows",
+					artistAlbumInfo: "Created by the founder of Serein",
+					artistAlbumUrl: "www.quietcalmrecords.com",
+				},
+				{
+					img: QC001AMAA,
+					artistAlbumTitle: "Boards of Canada - Not Sure",
+					artistAlbumInfo: "An early album from the masters of downtempo",
+					artistAlbumUrl: "www.quietcalmrecords.com",
+				},
+				{
+					artistAlbumTitle: "www.quietcalmrecords.com/store",
+					artistAlbumInfo: "test13",
+					artistAlbumUrl: "www.quietcalmrecords.com",
+				},
+				{
+					artistAlbumTitle: "",
+					artistAlbumInfo: "test14",
+					artistAlbumUrl: "www.quietcalmrecords.com",
+				},
+				{
+					artistAlbumInfo: "test15",
+					artistAlbumInfo: "test16",
+					artistAlbumUrl: "www.quietcalmrecords.com",
+				},
+				{
+					artistAlbumInfo: "test17",
+					artistAlbumInfo: "test18",
+					artistAlbumUrl: "www.quietcalmrecords.com",
+				},
+				{
+					artistAlbumInfo: "test19",
+					artistAlbumInfo: "test11",
+					artistAlbumUrl: "www.quietcalmrecords.com",
+				},
+			],
+			modalMix: [
+				{
+					artistAlbumMixInfo: "test1",
+					artistAlbumMixInfo: "test12",
+					artistAlbumUrl: "www.quietcalmrecords.com",
+				},
+				{
+					artistAlbumMixInfo: "test13",
+					artistAlbumMixInfo: "test14",
+					artistAlbumUrl: "www.quietcalmrecords.com",
+				},
+				{
+					artistAlbumMixInfo: "test15",
+					artistAlbumMixInfo: "test16",
+					artistAlbumUrl: "www.quietcalmrecords.com",
+				},
+				{
+					artistAlbumMixInfo: "test17",
+					artistAlbumMixInfo: "test18",
+					artistAlbumUrl: "www.quietcalmrecords.com",
+				},
+				{
+					artistAlbumMixInfo: "test19",
+					artistAlbumMixInfo: "test11",
+					artistAlbumUrl: "www.quietcalmrecords.com",
+				},
+			],
 		},
 		{
 			img: QC003,
@@ -274,6 +327,72 @@ export const initialState = {
 				"QCR: Aside from the titles featured in your mix - what artists/releases are you enjoying at the moment. ",
 			answer8:
 				"CB: That’s always a tough one since I am a heavy collector of music and name-dropping simply isn’t my thing and I tend to stick to this principle even today, I am afraid. Hope that’s okay.",
+			modalArtist: [
+				{
+					img: QC001AAA1,
+					artistAlbumTitle: "Hidden Rivers - Where the moss grows",
+					artistAlbumInfo: "Created by the founder of Serein",
+					artistAlbumUrl: "www.quietcalmrecords.com",
+				},
+				{
+					img: QC001AMAA,
+					artistAlbumTitle: "Boards of Canada - Not Sure",
+					artistAlbumInfo: "An early album from the masters of downtempo",
+					artistAlbumUrl: "www.quietcalmrecords.com",
+				},
+				{
+					artistAlbumTitle: "www.quietcalmrecords.com/store",
+					artistAlbumInfo: "test13",
+					artistAlbumUrl: "www.quietcalmrecords.com",
+				},
+				{
+					artistAlbumTitle: "",
+					artistAlbumInfo: "test14",
+					artistAlbumUrl: "www.quietcalmrecords.com",
+				},
+				{
+					artistAlbumInfo: "test15",
+					artistAlbumInfo: "test16",
+					artistAlbumUrl: "www.quietcalmrecords.com",
+				},
+				{
+					artistAlbumInfo: "test17",
+					artistAlbumInfo: "test18",
+					artistAlbumUrl: "www.quietcalmrecords.com",
+				},
+				{
+					artistAlbumInfo: "test19",
+					artistAlbumInfo: "test11",
+					artistAlbumUrl: "www.quietcalmrecords.com",
+				},
+			],
+			modalMix: [
+				{
+					artistAlbumMixInfo: "test1",
+					artistAlbumMixInfo: "test12",
+					artistAlbumUrl: "www.quietcalmrecords.com",
+				},
+				{
+					artistAlbumMixInfo: "test13",
+					artistAlbumMixInfo: "test14",
+					artistAlbumUrl: "www.quietcalmrecords.com",
+				},
+				{
+					artistAlbumMixInfo: "test15",
+					artistAlbumMixInfo: "test16",
+					artistAlbumUrl: "www.quietcalmrecords.com",
+				},
+				{
+					artistAlbumMixInfo: "test17",
+					artistAlbumMixInfo: "test18",
+					artistAlbumUrl: "www.quietcalmrecords.com",
+				},
+				{
+					artistAlbumMixInfo: "test19",
+					artistAlbumMixInfo: "test11",
+					artistAlbumUrl: "www.quietcalmrecords.com",
+				},
+			],
 		},
 		{
 			img: QC004,
@@ -327,6 +446,72 @@ export const initialState = {
 				"QCR: Thank you so much for answering our questions and for giving us some of the finest albums in our collection. One final question, who are you listening to these days? Any recommendations?",
 			answer11:
 				"JK: Thank you for your interest and this opportunity. And your very nice words about our works. I made a list of twelve pieces.Of course, a list is always just the feelings at this very moment, but for these pieces counts that I can listen to them every moment of the day and a few of them changed my way of listening and understanding music.So these are not all new music from these days, but I hope it gives a bit of an idea what music I like the most.",
+			modalArtist: [
+				{
+					img: QC001AAA1,
+					artistAlbumTitle: "Hidden Rivers - Where the moss grows",
+					artistAlbumInfo: "Created by the founder of Serein",
+					artistAlbumUrl: "www.quietcalmrecords.com",
+				},
+				{
+					img: QC001AMAA,
+					artistAlbumTitle: "Boards of Canada - Not Sure",
+					artistAlbumInfo: "An early album from the masters of downtempo",
+					artistAlbumUrl: "www.quietcalmrecords.com",
+				},
+				{
+					artistAlbumTitle: "www.quietcalmrecords.com/store",
+					artistAlbumInfo: "test13",
+					artistAlbumUrl: "www.quietcalmrecords.com",
+				},
+				{
+					artistAlbumTitle: "",
+					artistAlbumInfo: "test14",
+					artistAlbumUrl: "www.quietcalmrecords.com",
+				},
+				{
+					artistAlbumInfo: "test15",
+					artistAlbumInfo: "test16",
+					artistAlbumUrl: "www.quietcalmrecords.com",
+				},
+				{
+					artistAlbumInfo: "test17",
+					artistAlbumInfo: "test18",
+					artistAlbumUrl: "www.quietcalmrecords.com",
+				},
+				{
+					artistAlbumInfo: "test19",
+					artistAlbumInfo: "test11",
+					artistAlbumUrl: "www.quietcalmrecords.com",
+				},
+			],
+			modalMix: [
+				{
+					artistAlbumMixInfo: "test1",
+					artistAlbumMixInfo: "test12",
+					artistAlbumUrl: "www.quietcalmrecords.com",
+				},
+				{
+					artistAlbumMixInfo: "test13",
+					artistAlbumMixInfo: "test14",
+					artistAlbumUrl: "www.quietcalmrecords.com",
+				},
+				{
+					artistAlbumMixInfo: "test15",
+					artistAlbumMixInfo: "test16",
+					artistAlbumUrl: "www.quietcalmrecords.com",
+				},
+				{
+					artistAlbumMixInfo: "test17",
+					artistAlbumMixInfo: "test18",
+					artistAlbumUrl: "www.quietcalmrecords.com",
+				},
+				{
+					artistAlbumMixInfo: "test19",
+					artistAlbumMixInfo: "test11",
+					artistAlbumUrl: "www.quietcalmrecords.com",
+				},
+			],
 		},
 		{
 			img: QC005,
@@ -404,6 +589,72 @@ export const initialState = {
 				"QCR: Your mix will, I am sure, lead listeners down many rabbit holes. Aside from the artists, you featured, what other musicians are you listening to a lot these days, any recommendations?",
 			answer17:
 				"BQ: I just saw 'The Joker' at the movies (did I already mentioned that I really love Hildur Guðnadóttirs work? – The sound, the atmosphere, the depth in this movie ,,, so intense!). As I mentioned before my mix turned out quite beatless and ambient-ish. Beside that I really like beats (mostly broken) and rhythmical structures (mostly challenging) as well — check out the music of 'Ghost Warrior', 'Grischa Lichtenberger' (new album coming soon!), 'Emptyset', 'Demdike Stare', 'Skee Mask', 'Akkord', 'Chevel', 'Mad Zach', 'Hapa', 'CharlesTheFirst' ... for me this is all interesting sound design stuff and a huge inspiration (even if you can't hear it in my music.) ;)",
+			modalArtist: [
+				{
+					img: QC001AAA1,
+					artistAlbumTitle: "Hidden Rivers - Where the moss grows",
+					artistAlbumInfo: "Created by the founder of Serein",
+					artistAlbumUrl: "www.quietcalmrecords.com",
+				},
+				{
+					img: QC001AMAA,
+					artistAlbumTitle: "Boards of Canada - Not Sure",
+					artistAlbumInfo: "An early album from the masters of downtempo",
+					artistAlbumUrl: "www.quietcalmrecords.com",
+				},
+				{
+					artistAlbumTitle: "www.quietcalmrecords.com/store",
+					artistAlbumInfo: "test13",
+					artistAlbumUrl: "www.quietcalmrecords.com",
+				},
+				{
+					artistAlbumTitle: "",
+					artistAlbumInfo: "test14",
+					artistAlbumUrl: "www.quietcalmrecords.com",
+				},
+				{
+					artistAlbumInfo: "test15",
+					artistAlbumInfo: "test16",
+					artistAlbumUrl: "www.quietcalmrecords.com",
+				},
+				{
+					artistAlbumInfo: "test17",
+					artistAlbumInfo: "test18",
+					artistAlbumUrl: "www.quietcalmrecords.com",
+				},
+				{
+					artistAlbumInfo: "test19",
+					artistAlbumInfo: "test11",
+					artistAlbumUrl: "www.quietcalmrecords.com",
+				},
+			],
+			modalMix: [
+				{
+					artistAlbumMixInfo: "test1",
+					artistAlbumMixInfo: "test12",
+					artistAlbumUrl: "www.quietcalmrecords.com",
+				},
+				{
+					artistAlbumMixInfo: "test13",
+					artistAlbumMixInfo: "test14",
+					artistAlbumUrl: "www.quietcalmrecords.com",
+				},
+				{
+					artistAlbumMixInfo: "test15",
+					artistAlbumMixInfo: "test16",
+					artistAlbumUrl: "www.quietcalmrecords.com",
+				},
+				{
+					artistAlbumMixInfo: "test17",
+					artistAlbumMixInfo: "test18",
+					artistAlbumUrl: "www.quietcalmrecords.com",
+				},
+				{
+					artistAlbumMixInfo: "test19",
+					artistAlbumMixInfo: "test11",
+					artistAlbumUrl: "www.quietcalmrecords.com",
+				},
+			],
 		},
 		{
 			img: QC006,
@@ -465,6 +716,72 @@ export const initialState = {
 				"QCR: Whenever I discover new music in this style it never comes as a surprise to learn that the musician resides in Berlin. Why do you guys think Berlin is the world capital for the music of this nature? ",
 			answer13:
 				"OD: Is it? I think it is more connected to the ' artist paradise ' Berlin, that until now life was in comparison cheap here and you could develop music, with less commercial pressure . All this is now over, Berlin is becoming as shitty as other big cities, with the same problems than other big cities. Nowadays I wouldn´t move here anymore.",
+			modalArtist: [
+				{
+					img: QC001AAA1,
+					artistAlbumTitle: "Hidden Rivers - Where the moss grows",
+					artistAlbumInfo: "Created by the founder of Serein",
+					artistAlbumUrl: "www.quietcalmrecords.com",
+				},
+				{
+					img: QC001AMAA,
+					artistAlbumTitle: "Boards of Canada - Not Sure",
+					artistAlbumInfo: "An early album from the masters of downtempo",
+					artistAlbumUrl: "www.quietcalmrecords.com",
+				},
+				{
+					artistAlbumTitle: "www.quietcalmrecords.com/store",
+					artistAlbumInfo: "test13",
+					artistAlbumUrl: "www.quietcalmrecords.com",
+				},
+				{
+					artistAlbumTitle: "",
+					artistAlbumInfo: "test14",
+					artistAlbumUrl: "www.quietcalmrecords.com",
+				},
+				{
+					artistAlbumInfo: "test15",
+					artistAlbumInfo: "test16",
+					artistAlbumUrl: "www.quietcalmrecords.com",
+				},
+				{
+					artistAlbumInfo: "test17",
+					artistAlbumInfo: "test18",
+					artistAlbumUrl: "www.quietcalmrecords.com",
+				},
+				{
+					artistAlbumInfo: "test19",
+					artistAlbumInfo: "test11",
+					artistAlbumUrl: "www.quietcalmrecords.com",
+				},
+			],
+			modalMix: [
+				{
+					artistAlbumMixInfo: "test1",
+					artistAlbumMixInfo: "test12",
+					artistAlbumUrl: "www.quietcalmrecords.com",
+				},
+				{
+					artistAlbumMixInfo: "test13",
+					artistAlbumMixInfo: "test14",
+					artistAlbumUrl: "www.quietcalmrecords.com",
+				},
+				{
+					artistAlbumMixInfo: "test15",
+					artistAlbumMixInfo: "test16",
+					artistAlbumUrl: "www.quietcalmrecords.com",
+				},
+				{
+					artistAlbumMixInfo: "test17",
+					artistAlbumMixInfo: "test18",
+					artistAlbumUrl: "www.quietcalmrecords.com",
+				},
+				{
+					artistAlbumMixInfo: "test19",
+					artistAlbumMixInfo: "test11",
+					artistAlbumUrl: "www.quietcalmrecords.com",
+				},
+			],
 		},
 		{
 			img: QC007,
@@ -506,6 +823,72 @@ export const initialState = {
 			answer15: "BODY8",
 			question16: "BODY9",
 			answer16: "BODY0",
+			modalArtist: [
+				{
+					img: QC001AAA1,
+					artistAlbumTitle: "Hidden Rivers - Where the moss grows",
+					artistAlbumInfo: "Created by the founder of Serein",
+					artistAlbumUrl: "www.quietcalmrecords.com",
+				},
+				{
+					img: QC001AMAA,
+					artistAlbumTitle: "Boards of Canada - Not Sure",
+					artistAlbumInfo: "An early album from the masters of downtempo",
+					artistAlbumUrl: "www.quietcalmrecords.com",
+				},
+				{
+					artistAlbumTitle: "www.quietcalmrecords.com/store",
+					artistAlbumInfo: "test13",
+					artistAlbumUrl: "www.quietcalmrecords.com",
+				},
+				{
+					artistAlbumTitle: "",
+					artistAlbumInfo: "test14",
+					artistAlbumUrl: "www.quietcalmrecords.com",
+				},
+				{
+					artistAlbumInfo: "test15",
+					artistAlbumInfo: "test16",
+					artistAlbumUrl: "www.quietcalmrecords.com",
+				},
+				{
+					artistAlbumInfo: "test17",
+					artistAlbumInfo: "test18",
+					artistAlbumUrl: "www.quietcalmrecords.com",
+				},
+				{
+					artistAlbumInfo: "test19",
+					artistAlbumInfo: "test11",
+					artistAlbumUrl: "www.quietcalmrecords.com",
+				},
+			],
+			modalMix: [
+				{
+					artistAlbumMixInfo: "test1",
+					artistAlbumMixInfo: "test12",
+					artistAlbumUrl: "www.quietcalmrecords.com",
+				},
+				{
+					artistAlbumMixInfo: "test13",
+					artistAlbumMixInfo: "test14",
+					artistAlbumUrl: "www.quietcalmrecords.com",
+				},
+				{
+					artistAlbumMixInfo: "test15",
+					artistAlbumMixInfo: "test16",
+					artistAlbumUrl: "www.quietcalmrecords.com",
+				},
+				{
+					artistAlbumMixInfo: "test17",
+					artistAlbumMixInfo: "test18",
+					artistAlbumUrl: "www.quietcalmrecords.com",
+				},
+				{
+					artistAlbumMixInfo: "test19",
+					artistAlbumMixInfo: "test11",
+					artistAlbumUrl: "www.quietcalmrecords.com",
+				},
+			],
 		},
 		{
 			img: QC008,
@@ -575,6 +958,72 @@ export const initialState = {
 				"QCR: Thanks again for taking part in our Quiet Cast series. One final question; What musicians are you listening to a lot these days, any recommendations?",
 			answer15:
 				"Franz Kirmann: Thank you! I’m listening to a lot of different things these days, Nina Simone, Paul Simon, Bill Evans, HTRK, Robert Aiki Aubrey Lowe, Claire M Singer, Grouper… I’m looking forward to the new Pan American record in November as well. There is so much music! ",
+			modalArtist: [
+				{
+					img: QC001AAA1,
+					artistAlbumTitle: "Hidden Rivers - Where the moss grows",
+					artistAlbumInfo: "Created by the founder of Serein",
+					artistAlbumUrl: "www.quietcalmrecords.com",
+				},
+				{
+					img: QC001AMAA,
+					artistAlbumTitle: "Boards of Canada - Not Sure",
+					artistAlbumInfo: "An early album from the masters of downtempo",
+					artistAlbumUrl: "www.quietcalmrecords.com",
+				},
+				{
+					artistAlbumTitle: "www.quietcalmrecords.com/store",
+					artistAlbumInfo: "test13",
+					artistAlbumUrl: "www.quietcalmrecords.com",
+				},
+				{
+					artistAlbumTitle: "",
+					artistAlbumInfo: "test14",
+					artistAlbumUrl: "www.quietcalmrecords.com",
+				},
+				{
+					artistAlbumInfo: "test15",
+					artistAlbumInfo: "test16",
+					artistAlbumUrl: "www.quietcalmrecords.com",
+				},
+				{
+					artistAlbumInfo: "test17",
+					artistAlbumInfo: "test18",
+					artistAlbumUrl: "www.quietcalmrecords.com",
+				},
+				{
+					artistAlbumInfo: "test19",
+					artistAlbumInfo: "test11",
+					artistAlbumUrl: "www.quietcalmrecords.com",
+				},
+			],
+			modalMix: [
+				{
+					artistAlbumMixInfo: "test1",
+					artistAlbumMixInfo: "test12",
+					artistAlbumUrl: "www.quietcalmrecords.com",
+				},
+				{
+					artistAlbumMixInfo: "test13",
+					artistAlbumMixInfo: "test14",
+					artistAlbumUrl: "www.quietcalmrecords.com",
+				},
+				{
+					artistAlbumMixInfo: "test15",
+					artistAlbumMixInfo: "test16",
+					artistAlbumUrl: "www.quietcalmrecords.com",
+				},
+				{
+					artistAlbumMixInfo: "test17",
+					artistAlbumMixInfo: "test18",
+					artistAlbumUrl: "www.quietcalmrecords.com",
+				},
+				{
+					artistAlbumMixInfo: "test19",
+					artistAlbumMixInfo: "test11",
+					artistAlbumUrl: "www.quietcalmrecords.com",
+				},
+			],
 		},
 		{
 			img: QC009,
@@ -623,6 +1072,72 @@ export const initialState = {
 				"QCR: Finally, what pieces of music would you recommend to people right now? What is exciting your ears and what have you had on constant rotation?",
 			answer10:
 				"Subheim: I love the new Lorn stuff...well, pretty much everything he’s done. Other artists on constant rotation: Stereo Nova, John Maus, Chelsea Wolfe, Banks, Deru, Alessandro Cortini, Low, Ioanna Gika.",
+			modalArtist: [
+				{
+					img: QC001AAA1,
+					artistAlbumTitle: "Hidden Rivers - Where the moss grows",
+					artistAlbumInfo: "Created by the founder of Serein",
+					artistAlbumUrl: "www.quietcalmrecords.com",
+				},
+				{
+					img: QC001AMAA,
+					artistAlbumTitle: "Boards of Canada - Not Sure",
+					artistAlbumInfo: "An early album from the masters of downtempo",
+					artistAlbumUrl: "www.quietcalmrecords.com",
+				},
+				{
+					artistAlbumTitle: "www.quietcalmrecords.com/store",
+					artistAlbumInfo: "test13",
+					artistAlbumUrl: "www.quietcalmrecords.com",
+				},
+				{
+					artistAlbumTitle: "",
+					artistAlbumInfo: "test14",
+					artistAlbumUrl: "www.quietcalmrecords.com",
+				},
+				{
+					artistAlbumInfo: "test15",
+					artistAlbumInfo: "test16",
+					artistAlbumUrl: "www.quietcalmrecords.com",
+				},
+				{
+					artistAlbumInfo: "test17",
+					artistAlbumInfo: "test18",
+					artistAlbumUrl: "www.quietcalmrecords.com",
+				},
+				{
+					artistAlbumInfo: "test19",
+					artistAlbumInfo: "test11",
+					artistAlbumUrl: "www.quietcalmrecords.com",
+				},
+			],
+			modalMix: [
+				{
+					artistAlbumMixInfo: "test1",
+					artistAlbumMixInfo: "test12",
+					artistAlbumUrl: "www.quietcalmrecords.com",
+				},
+				{
+					artistAlbumMixInfo: "test13",
+					artistAlbumMixInfo: "test14",
+					artistAlbumUrl: "www.quietcalmrecords.com",
+				},
+				{
+					artistAlbumMixInfo: "test15",
+					artistAlbumMixInfo: "test16",
+					artistAlbumUrl: "www.quietcalmrecords.com",
+				},
+				{
+					artistAlbumMixInfo: "test17",
+					artistAlbumMixInfo: "test18",
+					artistAlbumUrl: "www.quietcalmrecords.com",
+				},
+				{
+					artistAlbumMixInfo: "test19",
+					artistAlbumMixInfo: "test11",
+					artistAlbumUrl: "www.quietcalmrecords.com",
+				},
+			],
 		},
 	],
 	dark: true,

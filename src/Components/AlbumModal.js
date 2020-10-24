@@ -1,14 +1,15 @@
 import React, { useState, useRef } from "react";
 import { useHistory } from "react-router-dom";
 import { makeStyles } from "@material-ui/core/styles";
-import Button from '@material-ui/core/Button';
-import Dialog from '@material-ui/core/Dialog';
+import Button from "@material-ui/core/Button";
+import Typography from "@material-ui/core/Typography";
+import Dialog from "@material-ui/core/Dialog";
 import "../UI/galleryStyles.css";
 
 const useStyles = makeStyles((theme) => ({
 	dialog: {
 		width: "100%",
-		height: "100%",
+		height: "50%",
 	},
 	container: {
 		margin: "100px",
@@ -18,35 +19,40 @@ const useStyles = makeStyles((theme) => ({
 		justifyItems: "space-around",
 		justifyContent: "space-around",
 	},
-	img: { width: "400px", height: "400px" },
+	galleries: {border: "2px solid black", textAlign: "center",},
+	img: { width: "300px", height: "300px", margin: "30px" },
+	buttons: { display: "flex", justifyContent: "space-around" },
+	button: { margin: "30px" },
 }));
 
-
-
 function AlbumModal(props) {
-		const history = useHistory();
-		const purchase = () => history.push(props.url);
+	const history = useHistory();
+	const purchase = () => history.push(props.urlPurchase);
+	const listen = () => history.push(props.urlListen);
 	const classes = useStyles();
 	return (
-		<div >
+		<div>
 			<Dialog onClose={props.close} open={props.open}>
 				<div className={classes.dialog}>
-				<div onClose={props.close} className="galleries">
-					{props.title}
-				</div>
-				<div>
-					<img src={props.image} className={classes.img} />
-				</div>
-				<div>
-					<button onClick={purchase}>Order</button>
-				</div>
+					<div onClose={props.close} className="galleries">
+						<Typography>{props.title}</Typography>
+					</div>
+					<div>
+						<img src={props.image} className={classes.img} />
+					</div>
+					<div className={classes.buttons}>
+						<Button className={classes.button} onClick={purchase}>
+							Order
+						</Button>
+						<Button className={classes.button} onClick={listen}>
+							Listen
+						</Button>
+					</div>
 				</div>
 			</Dialog>
 		</div>
 	);
 }
-
-
 
 // 	return (
 // 		<div className="galleries">
@@ -55,7 +61,7 @@ function AlbumModal(props) {
 // 					<button
 // 						aria-label="Previous Photo"
 // 						className="prev"
-						
+
 // 					>
 // 						←
 // 					</button>
