@@ -21,7 +21,12 @@ import QC001 from "../img/QC009.png";
 //ARTIST ALBUM ARTWORK FOR GALLERY
 //Drastic Steps
 import QC001AAA1 from "../img/artistAlbumArtworkDrasticSteps/hidden_rivers.jpg";
-
+//Subheim
+import Approach from "../img/AlbumArt/Subheim/artistAlbum/png/Approach.png"
+import Foray from "../img/AlbumArt/Subheim/artistAlbum/png/Subheim - Foray.png"
+import noLandCalledHome from "../img/AlbumArt/Subheim/artistAlbum/png/Subheim_No_Land_Called_Home.png"
+import Trails from "../img/AlbumArt/Subheim/artistAlbum/png/Subheim - Trails.png"
+import ΠΟΛΙΣ from "../img/AlbumArt/Subheim/artistAlbum/png/ΠΟΛΙΣ.png"
 //ARTIST MIX ALBUM ARTWORK FOR GALLERY
 //Drastic Steps
 import QC001AMAA from "../img/artistMixAlbumArtworkDrasticSteps/boardsOfCanada.jpg";
@@ -129,27 +134,27 @@ export const initialState = {
 			],
 			modalMix: [
 				{
-					artistAlbumMixInfo: "test1",
+					artistAlbumMixTitle: "test1",
 					artistAlbumMixInfo: "test12",
 					artistAlbumUrl: "www.quietcalmrecords.com",
 				},
 				{
-					artistAlbumMixInfo: "test13",
+					artistAlbumMixTitle: "test13",
 					artistAlbumMixInfo: "test14",
 					artistAlbumUrl: "www.quietcalmrecords.com",
 				},
 				{
-					artistAlbumMixInfo: "test15",
+					artistAlbumMixTitle: "test15",
 					artistAlbumMixInfo: "test16",
 					artistAlbumUrl: "www.quietcalmrecords.com",
 				},
 				{
-					artistAlbumMixInfo: "test17",
+					artistAlbumMixTitle: "test17",
 					artistAlbumMixInfo: "test18",
 					artistAlbumUrl: "www.quietcalmrecords.com",
 				},
 				{
-					artistAlbumMixInfo: "test19",
+					artistAlbumMixTitle: "test19",
 					artistAlbumMixInfo: "test11",
 					artistAlbumUrl: "www.quietcalmrecords.com",
 				},
@@ -244,44 +249,44 @@ export const initialState = {
 					artistAlbumUrl: "www.quietcalmrecords.com",
 				},
 				{
-					artistAlbumInfo: "test15",
+					artistAlbumTitle: "test15",
 					artistAlbumInfo: "test16",
 					artistAlbumUrl: "www.quietcalmrecords.com",
 				},
 				{
-					artistAlbumInfo: "test17",
+					artistAlbumTitle: "test17",
 					artistAlbumInfo: "test18",
 					artistAlbumUrl: "www.quietcalmrecords.com",
 				},
 				{
-					artistAlbumInfo: "test19",
+					artistAlbumTitle: "test19",
 					artistAlbumInfo: "test11",
 					artistAlbumUrl: "www.quietcalmrecords.com",
 				},
 			],
 			modalMix: [
 				{
-					artistAlbumMixInfo: "test1",
+					artistAlbumMixTitle: "test1",
 					artistAlbumMixInfo: "test12",
 					artistAlbumUrl: "www.quietcalmrecords.com",
 				},
 				{
-					artistAlbumMixInfo: "test13",
+					artistAlbumMixTitle: "test13",
 					artistAlbumMixInfo: "test14",
 					artistAlbumUrl: "www.quietcalmrecords.com",
 				},
 				{
-					artistAlbumMixInfo: "test15",
+					artistAlbumMixTitle: "test15",
 					artistAlbumMixInfo: "test16",
 					artistAlbumUrl: "www.quietcalmrecords.com",
 				},
 				{
-					artistAlbumMixInfo: "test17",
+					artistAlbumMixTitle: "test17",
 					artistAlbumMixInfo: "test18",
 					artistAlbumUrl: "www.quietcalmrecords.com",
 				},
 				{
-					artistAlbumMixInfo: "test19",
+					artistAlbumMixTitle: "test19",
 					artistAlbumMixInfo: "test11",
 					artistAlbumUrl: "www.quietcalmrecords.com",
 				},
@@ -351,34 +356,34 @@ export const initialState = {
 					artistAlbumUrl: "www.quietcalmrecords.com",
 				},
 				{
-					artistAlbumInfo: "test15",
+					artistAlbumTitle: "test15",
 					artistAlbumInfo: "test16",
 					artistAlbumUrl: "www.quietcalmrecords.com",
 				},
 				{
-					artistAlbumInfo: "test17",
+					artistAlbumTitle: "test17",
 					artistAlbumInfo: "test18",
 					artistAlbumUrl: "www.quietcalmrecords.com",
 				},
 				{
-					artistAlbumInfo: "test19",
+					artistAlbumTitle: "test19",
 					artistAlbumInfo: "test11",
 					artistAlbumUrl: "www.quietcalmrecords.com",
 				},
 			],
 			modalMix: [
 				{
-					artistAlbumMixInfo: "test1",
+					artistAlbumMixTitle: "test1",
 					artistAlbumMixInfo: "test12",
 					artistAlbumUrl: "www.quietcalmrecords.com",
 				},
 				{
-					artistAlbumMixInfo: "test13",
+					artistAlbumMixTitle: "test13",
 					artistAlbumMixInfo: "test14",
 					artistAlbumUrl: "www.quietcalmrecords.com",
 				},
 				{
-					artistAlbumMixInfo: "test15",
+					artistAlbumMixTitle: "test15",
 					artistAlbumMixInfo: "test16",
 					artistAlbumUrl: "www.quietcalmrecords.com",
 				},
@@ -388,7 +393,7 @@ export const initialState = {
 					artistAlbumUrl: "www.quietcalmrecords.com",
 				},
 				{
-					artistAlbumMixInfo: "test19",
+					artistAlbumMixTitle: "test19",
 					artistAlbumMixInfo: "test11",
 					artistAlbumUrl: "www.quietcalmrecords.com",
 				},
@@ -469,45 +474,30 @@ export const initialState = {
 					artistAlbumInfo: "test14",
 					artistAlbumUrl: "www.quietcalmrecords.com",
 				},
-				{
-					artistAlbumInfo: "test15",
-					artistAlbumInfo: "test16",
-					artistAlbumUrl: "www.quietcalmrecords.com",
-				},
-				{
-					artistAlbumInfo: "test17",
-					artistAlbumInfo: "test18",
-					artistAlbumUrl: "www.quietcalmrecords.com",
-				},
-				{
-					artistAlbumInfo: "test19",
-					artistAlbumInfo: "test11",
-					artistAlbumUrl: "www.quietcalmrecords.com",
-				},
 			],
 			modalMix: [
 				{
-					artistAlbumMixInfo: "test1",
+					artistAlbumMixTitle: "test1",
 					artistAlbumMixInfo: "test12",
 					artistAlbumUrl: "www.quietcalmrecords.com",
 				},
 				{
-					artistAlbumMixInfo: "test13",
+					artistAlbumMixTitle: "test13",
 					artistAlbumMixInfo: "test14",
 					artistAlbumUrl: "www.quietcalmrecords.com",
 				},
 				{
-					artistAlbumMixInfo: "test15",
+					artistAlbumMixTitle: "test15",
 					artistAlbumMixInfo: "test16",
 					artistAlbumUrl: "www.quietcalmrecords.com",
 				},
 				{
-					artistAlbumMixInfo: "test17",
+					artistAlbumMixTitle: "test17",
 					artistAlbumMixInfo: "test18",
 					artistAlbumUrl: "www.quietcalmrecords.com",
 				},
 				{
-					artistAlbumMixInfo: "test19",
+					artistAlbumMixTitle: "test19",
 					artistAlbumMixInfo: "test11",
 					artistAlbumUrl: "www.quietcalmrecords.com",
 				},
@@ -1074,42 +1064,36 @@ export const initialState = {
 				"Subheim: I love the new Lorn stuff...well, pretty much everything he’s done. Other artists on constant rotation: Stereo Nova, John Maus, Chelsea Wolfe, Banks, Deru, Alessandro Cortini, Low, Ioanna Gika.",
 			modalArtist: [
 				{
-					img: QC001AAA1,
-					artistAlbumTitle: "Hidden Rivers - Where the moss grows",
+					img: Approach,
+					artistAlbumTitle: "Subheim - Approach",
 					artistAlbumInfo: "Created by the founder of Serein",
 					artistAlbumUrl: "www.quietcalmrecords.com",
 				},
 				{
-					img: QC001AMAA,
-					artistAlbumTitle: "Boards of Canada - Not Sure",
+					img: Foray,
+					artistAlbumTitle: "Subheim - Foray",
 					artistAlbumInfo: "An early album from the masters of downtempo",
 					artistAlbumUrl: "www.quietcalmrecords.com",
 				},
 				{
-					artistAlbumTitle: "www.quietcalmrecords.com/store",
-					artistAlbumInfo: "test13",
+					img: noLandCalledHome,
+					artistAlbumTitle: "Subheim - No Land Called Home",
+					artistAlbumInfo: "An early album from the masters of downtempo",
 					artistAlbumUrl: "www.quietcalmrecords.com",
 				},
 				{
-					artistAlbumTitle: "",
-					artistAlbumInfo: "test14",
+					img: Trails,
+					artistAlbumTitle: "Subheim - Trails",
+					artistAlbumInfo: "An early album from the masters of downtempo",
 					artistAlbumUrl: "www.quietcalmrecords.com",
 				},
 				{
-					artistAlbumInfo: "test15",
-					artistAlbumInfo: "test16",
+					img: ΠΟΛΙΣ,
+					artistAlbumTitle: "Subheim - ΠΟΛΙΣ",
+					artistAlbumInfo: "An early album from the masters of downtempo",
 					artistAlbumUrl: "www.quietcalmrecords.com",
 				},
-				{
-					artistAlbumInfo: "test17",
-					artistAlbumInfo: "test18",
-					artistAlbumUrl: "www.quietcalmrecords.com",
-				},
-				{
-					artistAlbumInfo: "test19",
-					artistAlbumInfo: "test11",
-					artistAlbumUrl: "www.quietcalmrecords.com",
-				},
+
 			],
 			modalMix: [
 				{
